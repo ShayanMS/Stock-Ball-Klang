@@ -1,0 +1,73 @@
+/* BASIC RESET */
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
+
+/* HTML ELEMENTS */
+body { font-family:Georgia,serif; font-size:13px; background: #000000; color: #fff; }
+h1 { color: #fff; }
+#header1{margin-left:250px;}
+#header2{margin-left:200px;}
+h1 small{ font-size: 10px; text-transform:uppercase; letter-spacing: 14px; display: block; color: #ccc; }
+h2 { font-style:italic; font-size:13px;  }
+.h3 { font-style:italic; font-size:35px;  }
+p { margin:10px 0; }
+a { color:#eee; }
+
+/* COMMON CLASSES */
+.break { clear:both; }
+
+.form_body {
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:30px;
+}
+
+
+/* WRAPPER */
+#wrapper { width:800px; margin:0 auto; }
+
+/* JCHARACTERFALL */
+#notefall { margin:20px 0; }
+#gamerun { text-align: center; }
+#gamerun p { margin:10px; }
+#gamestart { text-align:center; }
+#gamestart p { margin:10px; }
+.extrapadding { padding-top:10px; padding-bottom:30px; }
+#gamecontainer { width:600px; margin:0 auto; }
+#canvas { width:450px; height:700px; float:left; background-image:url("Images/waterfall_bg.png");
+	-moz-box-shadow: 0 0 10px #adadad; -moz-border-radius: 5px; -webkit-box-shadow: 0 0 10px #adadad; -webkit-border-radius: 5px; }
+
+#button_container { width:inherit; height:50; position:relative; bottom:20px; }
+#button_red { width:50px; height:50px; margin-left:43px; float:bottom; position:relative; top:525px; z-index:3; opacity:0.65; }
+#button_blue { width:50px; height:50px; margin-left:50px; float:bottom; position:relative; top:525px; z-index:3; opacity:0.65;}
+#button_green { width:50px; height:50px; margin-left:51px; float:bottom; position:relative; top:525px; z-index:3; opacity:0.65;}
+#button_orange { width:50px; height:50px; margin-left:49px; float:bottom; position:relative; top:525px; z-index:3; opacity:0.65;}
+
+#songSelect{
+    background-color: black;
+    color: #fff;
+}
+
+dialog{
+    background-color: black;
+    color: #fff;
+}
+
+.buttons{
+    background-color: black;
+    color: #fff;
+}
+
+#gamestats { width:98px; height:500px; margin-left:50px; float:left; border:1px solid white;
+	-moz-box-shadow: 0 0 10px #adadad; -moz-border-radius: 5px; -webkit-box-shadow: 0 0 10px #adadad; -webkit-border-radius: 5px; }
+	
+.fallingnoteRed { background-image:url("Images/ball_red.gif"); width:50px; height:50px; background-repeat:no-repeat; opacity:0.9; }
+.fallingnoteBlue { background-image:url("Images/ball_blue.gif"); width:50px; height:50px; background-repeat:no-repeat; opacity:0.9;}
+.fallingnoteGreen { background-image:url("Images/ball_green.gif"); width:50px; height:50px; background-repeat:no-repeat; opacity:0.9;}
+.fallingnoteOrange{ background-image:url("Images/ball_orange.gif"); width:50px; height:50px; background-repeat:no-repeat; opacity:0.9;}
+
+.stats { text-align:center; display:none; }
+.counter { font-size:30px; font-style:italic; font-weight:bold; }
+
+.gameoverscreen { text-align:center; background-color:#818181; width:400px; height:225px; position:absolute; margin-right:auto; margin-bottom:auto;
+	-moz-box-shadow: 0 0 10px #adadad; -moz-border-radius: 5px; -webkit-box-shadow: 0 0 10px #adadad; -webkit-border-radius: 5px; }
+.gameoverscreen h2 { margin:0; }
