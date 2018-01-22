@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Stock-Ball-Klang</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script src="jquery.easing.1.3.js"></script>
+        <script src="jquery-1.3.2.min.js"></script>
+        <script src="jquery-ui-1.7.2.custom.min.js"></script>
+        
+    </head>
+    
+    <body>
+        <div id="wrapper">
+	       <h1><div id ="header2">Stock - Ball - Klang</div></h1>
+	       <div id="notefall">
+		      <div id="gamecontainer">
+			     <div id="canvas">
+				    <img id="button_red" src="Images/squere_red.gif">
+				    <img id="button_blue" src="Images/squere_blue.gif">
+				    <img id="button_green" src="Images/squere_green.gif">
+				    <img id="button_orange" src="Images/squere_orange.gif">	
+                 </div>
+			     <div id="gamestats">
+				    <div id="gamestart">
+					   <p class="extrapadding"><em>Choose A Song!</em></p>
+					   <br>
+					   <div id="song">
+						  <p><input type="image" id="songSelectButton" src="Images/cd-blue.png"/></p>
+						  <p><label for="songSelectButton" id="songSelectLabel">Beastie Boys - No Sleep Till Brooklyn</label></p>
+                           <p><input type="image" id="playButton" src="Images/playButton.png"/>
+                           </p>
+					   </div>
+					   
+					   <div id="Instructions">
+                           <br />
+						   <p>Instructions: use keys 'A','S','D','F'</p>
+					   </div>
+                        
+				    </div>
+                     <div id="gamerun">
+                         <p><img src="Images/cd-blue.png" id="runningSong"/></p>
+                         <p><label for="runningSong" id="runningSongLabel">Beastie Boys - No Sleep Till Brooklyn</label></p>
+                         <p>
+                            <input type="image" id="stopButton" src="Images/stopButton.png"/>
+                         </p>
+                         <p><img src="Images/note-blue.png" id="noteStreak"/></p>
+                         <p><label for="noteStreak" id="noteStreakLabel"><em>Streak:</em></label></p>
+                         <p><label for="noteStreakLabel" id="noteStreakCounter" class="counter">0</label></p>
+                         <p><img src="Images/multi_x1_small.png" id="multiplicator"/></p>
+                         <p><label id="points"><em>Points:</em></label></p>
+                         <p><label for="points" id="pointsCounter" class="counter">0</label></p>
+                     </div>
+			</div>
+		</div>
+	</div>
+	<br class="break" />
+</div>
+<dialog id="songSelection">
+  <form method="dialog">
+    <section>
+      <p><label for="songSelect">Choose your Song:</label>
+        <select id="songSelect"></select>
+      </p>
+    </section>
+    <menu>
+      <button class="buttons" type="submit">Submit</button>
+    </menu>
+  </form>
+</dialog>
+<dialog id="gameOverScreen" class="gameoverscreen">
+  <form method="dialog">
+            <h2 class="h3">Game Over!</h2>
+            <p>
+                <label id="totalNotesLabel" class="counter">Correct Notes: </label>
+                <label for="totalNotesLabel" id="totalNotesCounter" class="counter"></label>
+            </p>
+            <p>
+                <label id="maxStreakLabel" class="counter">Highest Streak: </label>
+                <label for="maxStreakLabel" id="maxStreakCounter" class="counter"></label>
+            </p>
+            <p>
+                <label id="totalPointsLabel" class="counter">Points: </label>
+                <label for="totalPointsLabel" id="totalPointsCounter" class="counter"></label>
+            </p>
+    <menu>
+      <button class="counter" type="submit">OK</button>
+    </menu>
+  </form>
+</dialog>
+        <div id="wrapper2">
+            
+           
+            <br>
+            <br>
+            <br>
+            <button class="buttons" id="rightNote">Richtig</button>
+            <button class="buttons" id="wrongNote">Falsch</button>
+            <button class="buttons" id="starPower">Star Power</button>
+            
+        </div>
+        <script defer src="klang.js"></script>
+        <script defer src="game.js"></script>
+    </body>
+</html>
